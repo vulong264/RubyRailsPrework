@@ -7,7 +7,11 @@
           </div>
           <div class="card-footer">
             <%= link_to 'Edit', edit_article_path(article), class: 'btn btn-warning' %>
+            <%= link_to 'Delete', article, method: :delete, data:{confirm:"You sure?"} %>
           </div>
+          
+            
+          
         </div>
   </div>
 </div>

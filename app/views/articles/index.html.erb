@@ -3,7 +3,18 @@
   <h1>Test Blog</h1>
 <h1>First Attempt On Ruby</h1>
 
-<%= render @articles %>
+ <%= form_tag(articles_path, :method => 'get',id:"search-form") do %>
+     <p>
+        <%= text_field_tag :search, params[:search], placeholder:"Search Title" %>
+        <%= submit_tag "Search" %>
+     </p>
+ <% end %>
+
+<% if @articles.present? %>
+  <%= render @articles %>
+<% else %>
+  <p>There are no posts with title containing the term(s) <%= params[:search] %>.</p>
+<% end %>
 
 <br>
 
