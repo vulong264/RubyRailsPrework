@@ -19,12 +19,12 @@ The following **required** functionality is complete:
 
 > HINT: mark the items you completed with [x]
 
-* [ ] User can create a new post, formatted using the Markdown language.
-* [ ] User can edit an existing post.
-* [ ] There is one post that introduces the App Creator with name, picture.
-* [ ] User can delete stories, with an alert that asks the user to confirm.
-* [ ] User see a search form on the Posts page.
-* [ ] User can submit a search term to find all posts bywith titles containing the search term.
+* [X] User can create a new post, formatted using the Markdown language.
+* [X] User can edit an existing post.
+* [X] There is one post that introduces the App Creator with name, picture.
+* [X] User can delete stories, with an alert that asks the user to confirm.
+* [X] User see a search form on the Posts page.
+* [X] User can submit a search term to find all posts bywith titles containing the search term.
 
 The following **optional** features are implemented:
 * [ ] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/. 
