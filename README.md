@@ -11,7 +11,7 @@ Submitted by: **Vu Long**
 
 Time spent: **2** hours spent in total
 
-URL: **Insert your Heroku URL here**
+URL: **https://guarded-beyond-28969.herokuapp.com/**
 
 ## User Stories
 
