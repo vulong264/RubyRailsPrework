@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :set_article, only: [:show, :edit, :update, :destroy, :search]
+  before_action :set_article, only: [:show, :edit, :update, :destroy, :search, :filter]
 
   # GET /articles
   # GET /articles.json
@@ -7,6 +7,11 @@ class ArticlesController < ApplicationController
     @articles = Article.all
     if params[:search]
     @articles = Article.search(params[:search])
+    else
+    @articles = Article.all
+    end
+    if (params[:filter] && params[:filter].present?)
+    @articles = Article.filter(params[:filter])
     else
     @articles = Article.all
     end
@@ -76,6 +81,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:title, :body)
+      params.require(:article).permit(:title, :body, :posttags, :usercomment)
     end
 end

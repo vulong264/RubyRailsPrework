@@ -5,4 +5,8 @@ class Article < ApplicationRecord
     def self.search(search)
     where('title LIKE ?', "%#{search}%")
     end
+
+    def self.filter(filter)
+    where('posttags LIKE ?', "%#{filter}%")
+    end
 end

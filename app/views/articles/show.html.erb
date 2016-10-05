@@ -10,5 +10,20 @@
   <%= @article.body %>
 </p>
 
+<p>
+  <strong>Comment:</strong>
+  <%= @article.usercomment %>
+</p>
+
+<p>
+  <strong>Viewcount:</strong>
+  <%= @article.viewcount %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @article.posttags %>
+</p>
+
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>

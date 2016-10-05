@@ -9,6 +9,12 @@
         <%= submit_tag "Search" %>
      </p>
  <% end %>
+<%= form_tag(articles_path, :method => 'get',id:"filter-form") do %>
+     <p>
+        <%= text_field_tag :filter, params[:filter], placeholder:"Filter Tags" %>
+        <%= submit_tag "Filter" %>
+     </p>
+ <% end %>
 
 <% if @articles.present? %>
   <%= render @articles %>

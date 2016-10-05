@@ -4,6 +4,7 @@
           <div class="card-block">
             <h4 class="card-title"><%= article.title %></h4>
               <p class="card-text"><%= @markdown.render(article.body).html_safe  %></p>
+              <p class="card-title">Tags:<%= article.posttags  %></p>
           </div>
           <div class="card-footer">
             <%= link_to 'Edit', edit_article_path(article), class: 'btn btn-warning' %>

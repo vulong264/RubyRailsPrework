@@ -21,6 +21,16 @@
     <%= f.text_area :body %>
   </div>
 
+  <div class="field">
+    <%= f.label "Tags" %>
+    <%= f.text_field :posttags %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Comment" %>
+    <%= f.text_area  :usercomment %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
